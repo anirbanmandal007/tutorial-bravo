@@ -6,12 +6,15 @@ import { PluckComponent } from '../topics/pluck/pluck.component';
 import { ObservableComponent } from '../topics/observable/observable.component';
 import { SubscribeComponent } from '../topics/subscribe/subscribe.component';
 import { ObservableVsPromiseComponent } from '../topics/observable-vs-promise/observable-vs-promise.component';
+import { ObjectmanipulationComponent } from '../topics/objectmanipulation/objectmanipulation.component';
 
 const routes: Routes=[
   {path: 'pluck', component: PluckComponent},
   {path: 'observable', component: ObservableComponent},
   {path: 'subscribe', component: SubscribeComponent},
-  {path: 'ovservable-vs-promise', component: ObservableVsPromiseComponent}
+  {path: 'ovservable-vs-promise', component: ObservableVsPromiseComponent},
+  {path: 'objectmanipulation', component: ObjectmanipulationComponent},
+  
 ]
 
 @NgModule({
@@ -20,7 +23,8 @@ const routes: Routes=[
     PluckComponent,
     ObservableComponent,
     SubscribeComponent,
-    ObservableVsPromiseComponent
+    ObservableVsPromiseComponent,
+    ObjectmanipulationComponent
   ],
   imports: [
     CommonModule,
