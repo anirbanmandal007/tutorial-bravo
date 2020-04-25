@@ -1,0 +1,67 @@
+<div class="page-wrapper chiller-theme toggled">
+    <a id="show-sidebar" class="btn btn-sm btn-dark">
+      <i class="fas fa-bars"></i>
+    </a>
+    <nav id="sidebar" class="sidebar-wrapper">
+      <div class="sidebar-content">
+        <div class="sidebar-brand">
+          <a>Topics list</a>
+          <div id="close-sidebar">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+        <div class="sidebar-search">
+          <div>
+            <div class="input-group">
+              <input type="text" class="form-control search-menu" placeholder="Search...">
+              <div class="input-group-append">
+                <span class="input-group-text">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- sidebar-search  -->
+        <div class="sidebar-menu">
+          <ul>
+            <li class="sidebar-dropdown">
+              <a>
+                <i class="fa fa-angle-double-right"></i>
+                <span>RXJS</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a [routerLink]="['topics/pluck']" data-filter-item data-filter-name="pluck">Pluck</a>
+                  </li>
+                  <li>
+                    <a [routerLink]="['topics/observable']" data-filter-item data-filter-name="observable">Observable</a>
+                  </li>
+                  <li>
+                    <a [routerLink]="['topics/subscribe']" data-filter-item data-filter-name="subscribe">Subscribe</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="sidebar-dropdown">
+              <a>
+                <i class="fa fa-angle-double-right"></i>
+                <span>Angular</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a [routerLink]="['topics/ovservable-vs-promise']" data-filter-item data-filter-name="pluck">Observable vs Promise</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- sidebar-menu  -->
+      </div>
+    </nav>
+    <router-outlet></router-outlet>
+</div>
