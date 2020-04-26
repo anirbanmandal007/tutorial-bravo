@@ -2,5 +2,35 @@
     <div class="container-fluid default-bar">
       <h2>What is difference between ElementRef/TemplateRef/ConatinerRef? What is Practical Use of it? Please Provide Examples</h2>
       <hr>
+
+      <h4>ElementRef</h4>
+      <p>
+        Here, we create a query that looks for the element with the myDiv template reference. The type of the divView variable is our ElementRef interface which means we can access the nativeElement object that reprents the DOM element in the browser.
+      </p>
+
+      <h4>TemplateRef</h4>
+      <p>
+        A template reference variable is often a reference to a DOM element within a template. It can also be a reference to an Angular component or directive or a web component (Read more at Angular.io). That means you can easily access the variable anywhere in the template.
+      </p>
+      
+      <h4>ViewContainerRef</h4>
+      <p>Represents a container where one or more views can be attached to a component.</p>
+      <p>
+        Can contain host views (created by instantiating a component with the createComponent() method), and embedded views (created by instantiating a TemplateRef with the createEmbeddedView() method). A view container instance can contain other view containers, creating a view hierarchy.
+      </p>
+
+      <h3 class="mt-4">Hands-on link:</h3>
+          <hr>
+          <a href="https://viewcontainer-ref.stackblitz.io" target="_blank">stackblitz</a>
+          <a href="https://angular-wpupz3.stackblitz.io" target="_blank">stackblitz</a>
+      <h3 class="mt-4">Usefull links:</h3>
+      <hr>
+      <ul>
+          <li><a href="https://blog.mgechev.com/2017/10/01/angular-template-ref-dynamic-scoping-custom-templates/" target="_blank">itnext</a></li>
+          <li><a href="https://netbasal.com/angular-2-understanding-viewcontainerref-acc183f3b682" target="_blank">netbasal</a></li>
+          <li><a href="https://stackoverflow.com/questions/53374430/difference-between-elementref-and-templateref-in-angular4" target="_blank">stackoverflow</a></li>
+          <li><a href="https://indepth.dev/here-is-how-to-get-viewcontainerref-before-viewchild-query-is-evaluated/" target="_blank">indepth</a></li>
+          <li><a href="https://angular.io/api/core/ViewContainerRef" target="_blank">angular.io</a></li>
+      </ul>
     </div>
 </main>
