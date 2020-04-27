@@ -2,5 +2,23 @@
     <div class="container-fluid default-bar">
       <h2>What is different Change Detection Startegy in Angular? What is Practical Use of it? Please Provide Examples</h2>
       <hr>
+
+      <div class="row">
+        <div class="form-group col-md-12">
+          <p>Angular performs change detection on all components (from top to bottom) every time something changes in your app from something like a user event or data received from a network request. Change detection is very performant, but as an app gets more complex and the amount of components grows, change detection will have to perform more and more work. There’s a way to circumvent that however and set the change detection strategy to OnPush on specific components. Doing this will instruct Angular to run change detection on these components and their sub-tree only when new references are passed to them versus when data is simply mutated.
+
+          </p>
+          <h3 class="mt-4">Hands-on link:</h3>
+          <hr>
+          <a href="https://stackblitz.com/edit/change-detection-strategies" target="_blank">stackblitz</a> <br />
+          <h3 class="mt-4">Usefull links:</h3>
+          <hr>
+          <ul>
+              <li><a href="https://alligator.io/angular/change-detection-strategy/" target="_blank">alligator</a></li>
+              <li><a href="https://netbasal.com/a-comprehensive-guide-to-angular-onpush-change-detection-strategy-5bac493074a4" target="_blank">netbasal</a></li>
+            </ul>
+        </div>
+      </div>
     </div>
 </main>
+

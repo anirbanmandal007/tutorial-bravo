@@ -2,9 +2,50 @@
     <div class="container-fluid default-bar">
       <h4>What is Async Pipe in Angular/ Why we use this instead of Subscribe? <br>How to use that? How to unsubscribe it? <br>how to handle it and how to handle in component?<br> What is Practical Use of it?<br> Please Provide Examples</h4>
       <h4>What is Combinelatest ? What is Practical Use of it? Please Provide Examples</h4>
-      
-      <a href="https://medium.com/better-programming/let-angular-manage-your-rxjs-subscriptions-better-9243073e94b0" target="_blank">I read this article here</a>
-      <h4></h4>
+      <hr />
+      <!-- <a href="https://medium.com/better-programming/let-angular-manage-your-rxjs-subscriptions-better-9243073e94b0" target="_blank">I read this article here</a> -->
+      <div class="row">
+        <div class="form-group col-md-12">
+          <h4>Async Pipe</h4>
+          <p>The async pipe in angular will subscribe to an Observable or Promise and return the latest value it has emitted. Whenever a new value is emitted from an Observable or Promise, the async pipe marks the component to be checked for changes. When the component gets destroyed, the async pipe unsubscribes automatically to avoid potential memory leaks. We can use the async pipe in Angular application by including the CommonModule which exports all the basic Angular directives and pipes, such as NgIf, NgForOf, DecimalPipe, and so on. These are then re-exported by BrowserModule, which is included automatically in the root AppModule, when you create a new app with the CLI new command.
+          </p>
+          <p>When we want to simply ignore the events in the from the outer stream, during the execution of the inner stream, exhaustMap() is the correct choice. So when using this mapping strategy we simply do not execute mapping at all, it the outer event appears before the completion of the inner stream. This could be useful when we want to minimize the number of HTTP calls going out from the browser. </p>
+          <h4 class="mt-4">Syntax:</h4>
+          
+          <pre>
+            <code>
+              <span>{{'{'}}{{'{'}}obj_expression | async{{'}'}}{{'}'}}</span>
+            </code>
+          </pre>
+
+          <h4  class="mt-4">Usage </h4>
+          <p>AsyncPipes for Observables automatically subscribes to the observable, renders the output, and then also unsubscribes when the component is destroyed. So, we don’t need to handle the cleanup logic ourselves. There is no need to unsubscribe manually in the component. Angular handles subscriptions of async pipes for us automatically using ngOnDestroy. AsyncPipe uses the OnPush change detection out of the box. We need to make sure that all our business logic is immutable and always returns new objects.</p>
+          
+          <h4 class="mt-4">Advantages of Using AsyncPipe over Subscribe</h4>
+          <ul>
+            <li>Using subscribe() introduces a complementary need to unsubscribe at the end of the component life-cycle to avoid memory leaks. Developers have to unsubscribe manually. The most RxJS (declarative) common way to do this is to using. There is no need to unsubscribe manually in the component. Angular handles subscriptions of async pipes for us automatically using ngOnDestroy.
+            </li>
+            <li>The Unwrapped property is available everywhere in the component. This means it can be used directly in the component’s method without the need to pass it from the template. That way, all of the states can be kept in the component.
+            </li>
+            <li>The OnPush change detection strategy is great for performance, so we should be using async pipe as much as possible. More so, we could argue that the consistent use of these features simplifies applications because developers can always assume one-way data flow and automatic subscription management.</li>
+          </ul>
+
+          <h4 class="mt-4">combineLatest</h4>
+          <p>This operator is best used when you have multiple, long-lived observables that rely on each other for some calculation or determination.
+            Please refer stackblitz demo </p>
+          <h3 class="mt-4">Hands-on link:</h3>
+          <hr>
+          <a href="https://stackblitz.com/edit/async-pipe?file=app%2Fasync-pipe%2Fasync-pipe.component.ts" target="_blank">stackblitz</a>
+          <a id="combineLatest" href="https://stackblitz.com/edit/angular-rxjs-combinelatest" target="_blank">stackblitz</a>
+          <h3 class="mt-4">Usefull links:</h3>
+          <hr>
+          <ul>
+              <li><a href="https://codecraft.tv/courses/angular/pipes/async-pipe/" target="_blank">codecraft</a></li>
+              <li><a href="https://thinkster.io/tutorials/angular-2-pipes/using-the-async-pipe-for-future-data" target="_blank">thinkster</a></li>
+              <li><a href="https://www.concretepage.com/angular-2/angular-2-async-pipe-example" target="_blank">thinkster</a></li>
+            </ul>
+        </div>
+      </div>
       <hr>
     </div>
 </main>

@@ -2,5 +2,34 @@
     <div class="container-fluid default-bar">
       <h2>What is difference between paramsMap/SwitchMap/queryMap in Angular? What is Practical Use of it? Please Provide Examples</h2>
       <hr>
+      <h4 class="mt-4">
+        ParamMap
+      </h4>
+      <p>ParamMap is an Observable that contains a map of the required and optional parameters specific to the route. The map supports retrieving single and multiple values from the same parameter.
+         <a href="https://www.c-sharpcorner.com/article/using-parammap-observable-for-handling-route-in-angular/" target="_blank">This</a> is the best article I found.
+      </p> 
+      
+      <h4 class="mt-4">
+        queryparam
+      </h4>
+      <p>Query parameters in Angular allow for passing optional parameters across any route in the application. Query params are different from regular route parameters, which are only available on one route and are not optional (e.g.: /product/:id).</p>
+
+      <h4 class="mt-4">
+        switchMap
+      </h4>
+      <p>The switchMap operator returns an observable that emits items based on applying a function that you supply to each item emitted by the source observable where that function returns an inner observable.</p>
+
+      <h3 class="mt-4">Hands-on link:</h3>
+          <hr>
+          <a href="https://stackblitz.com/edit/angular-route-parameters?file=app%2Fuser.component.ts" target="_blank">stackblitz</a>
+          <a href="https://stackblitz.com/edit/switchmap" target="_blank">stackblitz</a>
+
+          <h3 class="mt-4">Usefull links:</h3>
+          <hr>
+          <ul>
+              <li><a href="https://www.learnrxjs.io/learn-rxjs/operators/transformation/switchmap" target="_blank">learnrxjs</a></li>
+              <li><a href="https://alligator.io/angular/query-parameters/" target="_blank">alligator</a></li>
+            </ul>
+
     </div>
 </main>

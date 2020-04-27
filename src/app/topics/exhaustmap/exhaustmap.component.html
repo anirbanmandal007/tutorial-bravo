@@ -2,5 +2,39 @@
     <div class="container-fluid default-bar">
       <h2>What is ExhaustMap in Angular? What is Practical Use of it? Please Provide Examples</h2>
       <hr>
+
+      <div class="row">
+        <div class="form-group col-md-12">
+          <p>"exhaustMap" maps to inner observable, ignore other values until that observable completes.
+          </p>
+          <p>When we want to simply ignore the events in the from the outer stream, during the execution of the inner stream, exhaustMap() is the correct choice. So when using this mapping strategy we simply do not execute mapping at all, it the outer event appears before the completion of the inner stream. This could be useful when we want to minimize the number of HTTP calls going out from the browser. </p>
+          <h5 class="mt-4">Signature:</h5>
+          <p>exhaustMap(project: function, resultSelector: function): Observable</p>
+
+          <h5 class="mt-4">Example:</h5>
+
+          
+          <pre>
+            <code>
+              <span>fromEvent(saveBtn, 'click')</span>
+              <span>.pipe(exhaustMap(click => save()))</span>
+              <span>.subscribe(result => {{'{'}}</span>
+              <span>// result is the result of save()</span>
+              <span>{{'}'}});</span>
+            </code>
+          </pre>
+
+          
+          <h3 class="mt-4">Hands-on link:</h3>
+          <hr>
+          <a href="https://stackblitz.com/edit/typescript-3qydhn?file=index.ts&devtoolsheight=100" target="_blank">stackblitz(check console for results)</a>
+          <h3 class="mt-4">Usefull links:</h3>
+          <hr>
+          <ul>
+              <li><a href="https://www.learnrxjs.io/learn-rxjs/operators/transformation/exhaustmap" target="_blank">learnrxjs</a></li>
+              <li><a href="https://angular-academy.com/rxjs-switchmap-concatmap-mergemap-exhaustmap/#exhaustmap" target="_blank">angular-academy</a></li>
+            </ul>
+        </div>
+      </div>
     </div>
 </main>

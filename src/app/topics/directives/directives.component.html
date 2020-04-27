@@ -2,5 +2,27 @@
     <div class="container-fluid default-bar">
       <h2>What is different Directives in Angular/ What is difference between component and directive? What is Practical Use of it? Please Provide Examples</h2>
       <hr>
+
+      <p>A directive is a function that executes whenever the Angular compiler finds it in the DOM. Angular directives are used to extend the power of the HTML by giving it new syntax. Each directive has a name — either one from the Angular predefined like ng-repeat, or a custom one which can be called anything. And each directive determines where it can be used: in an element, attribute, class or comment.</p>
+    <p>By default, from Angular versions 2 and onward, Angular directives are separated into three different types:    </p>
+    <ul>
+      <li><b>Components:</b>
+        Components are just directives with templates. Under the hood, they use the directive API and give us a cleaner way to define them.
+
+        The other two directive types don’t have templates. Instead, they’re specifically tailored to DOM manipulation.
+      </li>
+      <li><b>Attribute directives:</b>
+        Attribute directives manipulate the DOM by changing its behavior and appearance.
+
+        We use attribute directives to apply conditional style to elements, show or hide elements or dynamically change the behavior of a component according to a changing property.
+        <a href="https://stackblitz.com/angular/naavjopgege" target="_blank">stackblitz</a>
+      </li>
+      <li><b>Structural directives:</b>
+        These are specifically tailored to create and destroy DOM elements.
+        
+        Some attribute directives — like "[hidden]", which shows or hides an element — basically maintain the DOM as it is. But the structural Angular directives are much less DOM friendly, as they add or completely remove elements from the DOM. So, when using these, we have to be extra careful, since we’re actually changing the HTML structure.
+        
+      </li>
+    </ul>
     </div>
 </main>

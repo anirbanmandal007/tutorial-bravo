@@ -2,5 +2,48 @@
     <div class="container-fluid default-bar">
       <h2>What is FromEvent in Angular? What is Practical Use of it? Please Provide Examples</h2>
       <hr>
+
+      <div class="row">
+        <div class="form-group col-md-12">
+          <p>"FromEvent" creates an observable sequence by adding an event listener to the matching DOMElement, jQuery element, Zepto Element, Angular element, Ember.js element or EventEmitter.
+
+          </p>
+          <h5 class="mt-4">Signature:</h5>
+          <p>fromEvent(target: EventTargetLike, eventName: string, selector: function): Observable</p>
+          <h5 class="mt-4">Arguments:</h5>
+          <ol>
+            <li><b>target (Any)</b>: The DOMElement, NodeList, jQuery element, Zepto Element, Angular element, Ember.js element or EventEmitter to attach a listener. For Backbone.Marionette this would be the application or an EventAggregator object.</li>
+            <li><b>eventName (String)</b>: The event name to attach the observable sequence.</li>
+            <li><b>[selector] (Function)</b>: A selector which takes the arguments from the event emitter so that you can return a single object.</li>
+          </ol>
+
+          <h5 class="mt-4">Example:</h5>
+
+          
+          <pre>
+            <code>
+              <span>import {{'{'}} fromEvent {{'}'}} from 'rxjs';</span>
+              <span>const clicks = fromEvent(document, 'click');</span>
+              <span>clicks.subscribe(x => console.log(x));</span>
+            </code>
+          </pre>
+          
+          
+          <p>The above code binds an event listener to the document. When user clicks on the document, the "clicks" gets subscribed and pront the actual Event.</p>
+
+          <h5 class="mt-4">Returns: </h5>
+          <p>An observable sequence of events from the specified element and the specified event.</p>
+          
+          <h3 class="mt-4">Hands-on link:</h3>
+          <hr>
+          <a href="https://stackblitz.com/edit/typescript-mfyefr?file=index.ts" target="_blank">stackblitz(check console for results)</a>
+          <h3 class="mt-4">Usefull links:</h3>
+          <hr>
+          <ul>
+              <li><a href="http://www.jiodev.com/angular/learn-rxjs/fromEvent" target="_blank">jiodev</a></li>
+              <li><a href="https://www.learnrxjs.io/learn-rxjs/operators/creation/fromevent" target="_blank">learn-rxjs</a></li>
+            </ul>
+        </div>
+      </div>
     </div>
 </main>
