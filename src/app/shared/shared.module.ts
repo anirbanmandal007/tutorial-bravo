@@ -27,6 +27,8 @@ import { SubjectinhttpserviceComponent } from '../topics/subjectinhttpservice/su
 import { FromeventComponent } from '../topics/fromevent/fromevent.component';
 import { ShareComponent } from '../topics/share/share.component';
 import { ShadowdomComponent } from '../topics/shadowdom/shadowdom.component';
+import { AsyncpipeCombinelatestComponent } from '../topics/asyncpipe-combinelatest/asyncpipe-combinelatest.component';
+import { InterceptinputComponent } from '../topics/interceptinput/interceptinput.component';
 
 const routes: Routes=[
   {path: 'pluck', component: PluckComponent},
@@ -49,7 +51,9 @@ const routes: Routes=[
   {path: 'dynamic', component: DynamiccomponentComponent},
   {path: 'parentchild', component: ParentChildCommunicationComponent},
   {path: 'childparent', component: ChildParentCommunicationComponent},
-  {path: 'subjecthttp', component: SubjectinhttpserviceComponent}
+  {path: 'subjecthttp', component: SubjectinhttpserviceComponent},
+  {path: 'asyncpipe', component: AsyncpipeCombinelatestComponent},
+  {path: 'interceptinput', component: InterceptinputComponent},
 ]
 
 @NgModule({
@@ -77,7 +81,9 @@ const routes: Routes=[
     ComponentfactoryComponent,
     ParentChildCommunicationComponent,
     ChildParentCommunicationComponent,
-    SubjectinhttpserviceComponent
+    SubjectinhttpserviceComponent,
+    AsyncpipeCombinelatestComponent,
+    InterceptinputComponent
   ],
   imports: [
     CommonModule,
