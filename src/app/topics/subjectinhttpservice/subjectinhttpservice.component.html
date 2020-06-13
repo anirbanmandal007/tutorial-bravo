@@ -2,5 +2,32 @@
     <div class="container-fluid default-bar">
       <h2>How to use subject in http service calls? What is Practical Use of it? Please Provide Examples</h2>
       <hr>
+
+      <p>
+        An RxJS Subject is a special type of Observable that allows values to be multicasted to many Observers. While plain Observables are unicast (each subscribed Observer owns an independent execution of the Observable), Subjects are multicast.
+      </p>
+      <p>A Subject is like an Observable, but can multicast to many Observers. Subjects are like EventEmitters: they maintain a registry of many listeners.
+
+      </p>
+      <p>Every Subject is an Observable. Given a Subject, you can subscribe to it, providing an Observer, which will start receiving values normally. From the perspective of the Observer, it cannot tell whether the Observable execution is coming from a plain unicast Observable or a Subject.
+      </p>
+      <p>Internally to the Subject, subscribe does not invoke a new execution that delivers values. It simply registers the given Observer in a list of Observers, similarly to how addListener usually works in other libraries and languages.
+      </p>
+      <p>Every Subject is an Observer. It is an object with the methods next(v), error(e), and complete(). To feed a new value to the Subject, just call next(theValue), and it will be multicasted to the Observers registered to listen to the Subject.
+      </p>
+      <span>
+        
+      </span>
+  
+      <h3 class="mt-4">Hands-on link:</h3>
+          <hr>
+          <a href="https://stackblitz.com/edit/angular-subject-sample" target="_blank">stackblitz</a><br />
+          <a href="https://stackblitz.com/edit/angular-subject-observable" target="_blank">stackblitz</a>
+      <h3 class="mt-4">Usefull links:</h3>
+      <hr>
+      <ul>
+          <li><a href="https://rxjs-dev.firebaseapp.com/guide/subject" target="_blank">rxjs</a></li>
+          <li><a href="https://jasonwatmore.com/post/2018/06/25/angular-6-communicating-between-components-with-observable-subject" target="_blank">jasonwatmore</a></li>
+      </ul>
     </div>
 </main>
