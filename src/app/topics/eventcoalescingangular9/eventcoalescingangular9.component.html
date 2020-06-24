@@ -2,5 +2,20 @@
     <div class="container-fluid default-bar">
       <h2>What is EventCoalescing in angular 9? What is Practical Use of it? Please Provide Examples</h2>
       <hr>
+
+      <p>
+        Starting from Angular v9, we have the option to instruct Angular to coalesce events which are called continuously upwards through DOM tree(Event Bubling). We do this by setting the new ngZoneEventCoalescing property to true in the bootstrapModule method:
+      </p>
+
+      <code ng-non-bindable>platformBrowserDynamic().bootstrapModule( AppModule, &#123; ngZoneEventCoalescing: true &#125; )</code>
+          
+      <h3 class="mt-4">Usefull links:</h3>
+      <hr>
+      <ul>
+          <li><a href="https://netbasal.com/reduce-change-detection-cycles-with-event-coalescing-in-angular-c4037199859f" target="_blank">netbasal</a></li>
+          <li><a href="https://dev.to/gaurangdhorda/change-detection-strategy-in-angular-25mc" target="_blank">gaurangdhorda</a></li>
+      </ul>
+
+    
     </div>
 </main>

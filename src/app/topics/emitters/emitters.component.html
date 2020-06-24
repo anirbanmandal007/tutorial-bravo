@@ -2,5 +2,37 @@
     <div class="container-fluid default-bar">
       <h2>What is different type of emitters in angular? What is Practical Use of it? Please Provide Examples</h2>
       <hr>
+
+      <p>
+        Data flows into your component via property bindings and flows out of your component through event bindings.
+      </p>
+
+      <p>
+        If you want your component to notify his parent about something you can use the Output decorator with EventEmitter to create a custom event.
+      </p>
+
+      <p>
+        We can use the Output decorator to label our property add as an event a component can fire to send data to its parent.
+      </p>
+
+      <p>
+        The parent can listen to an event like this:
+
+      </p>
+      <code>&lt;add-todo (add)="addTodo($event)"&gt;&lt;/add-todo&gt;</code>
+      <h3 class="mt-4">Hands-on link:</h3>
+          <hr>
+          <div class="row"><a href="https://stackblitz.com/edit/event-emitter" target="_blank">stackblitz</a></div>
+          <div class="row"> <a href="https://stackblitz.com/edit/angular-eventemitter-todo" target="_blank">stackblitz</a></div>
+          
+      <h3 class="mt-4">Usefull links:</h3>
+      <hr>
+      <ul>
+          <li><a href="https://ultimatecourses.com/blog/component-events-event-emitter-output-angular-2" target="_blank">ultimatecourses</a></li>
+          <li><a href="https://netbasal.com/event-emitters-in-angular-13e84ee8d28c" target="_blank">netbasal</a></li>
+          <li><a href="https://angular.io/api/core/EventEmitter" target="_blank">angular.io</a></li>
+      </ul>
+
+
     </div>
 </main>
