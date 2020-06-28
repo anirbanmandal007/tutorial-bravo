@@ -53,6 +53,8 @@ import { Eventcoalescingangular9Component } from '../topics/eventcoalescingangul
 import { DependecncyinjectionComponent } from '../topics/dependecncyinjection/dependecncyinjection.component';
 import { AsyncawaitComponent } from '../topics/asyncawait/asyncawait.component';
 import { FormarrayangularComponent } from '../topics/formarrayangular/formarrayangular.component';
+import { ObserverpatternComponent } from '../topics/observerpattern/observerpattern.component';
+import { FacadepatternComponent } from '../topics/facadepattern/facadepattern.component';
 
 const routes: Routes=[
   {path: 'pluck', component: PluckComponent},
@@ -103,6 +105,8 @@ const routes: Routes=[
   {path: 'some', component: SomeinangularComponent},
   {path: 'subjects', component: SubjectsComponent},
   {path: 'websockets', component: WebsocketsComponent},
+  {path: 'observerpattern', component: ObserverpatternComponent},
+  {path: 'facadepattern', component: FacadepatternComponent}
 ]
 
 @NgModule({
@@ -156,7 +160,9 @@ const routes: Routes=[
     Eventcoalescingangular9Component,
     DependecncyinjectionComponent,
     AsyncawaitComponent,
-    FormarrayangularComponent
+    FormarrayangularComponent,
+    ObserverpatternComponent,
+    FacadepatternComponent
   ],
   imports: [
     CommonModule,
