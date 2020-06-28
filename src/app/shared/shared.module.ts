@@ -57,6 +57,7 @@ import { ObserverpatternComponent } from '../topics/observerpattern/observerpatt
 import { FacadepatternComponent } from '../topics/facadepattern/facadepattern.component';
 import { RoutereventsComponent } from '../topics/routerevents/routerevents.component';
 import { ArraymanipulationsComponent } from '../topics/arraymanipulations/arraymanipulations.component';
+import { GoodpracticesComponent } from '../topics/goodpractices/goodpractices.component';
 
 const routes: Routes=[
   {path: 'pluck', component: PluckComponent},
@@ -110,7 +111,8 @@ const routes: Routes=[
   {path: 'observerpattern', component: ObserverpatternComponent},
   {path: 'facadepattern', component: FacadepatternComponent},
   {path: 'routerevents', component: RoutereventsComponent},
-  {path: 'arraymanipulation', component: ArraymanipulationsComponent}
+  {path: 'arraymanipulation', component: ArraymanipulationsComponent},
+  {path: 'goodpractices', component: GoodpracticesComponent}
 ]
 
 @NgModule({
@@ -168,7 +170,8 @@ const routes: Routes=[
     ObserverpatternComponent,
     FacadepatternComponent,
     RoutereventsComponent,
-    ArraymanipulationsComponent
+    ArraymanipulationsComponent,
+    GoodpracticesComponent
   ],
   imports: [
     CommonModule,
