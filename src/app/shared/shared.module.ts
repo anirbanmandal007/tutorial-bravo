@@ -55,6 +55,7 @@ import { AsyncawaitComponent } from '../topics/asyncawait/asyncawait.component';
 import { FormarrayangularComponent } from '../topics/formarrayangular/formarrayangular.component';
 import { ObserverpatternComponent } from '../topics/observerpattern/observerpattern.component';
 import { FacadepatternComponent } from '../topics/facadepattern/facadepattern.component';
+import { RoutereventsComponent } from '../topics/routerevents/routerevents.component';
 
 const routes: Routes=[
   {path: 'pluck', component: PluckComponent},
@@ -106,7 +107,8 @@ const routes: Routes=[
   {path: 'subjects', component: SubjectsComponent},
   {path: 'websockets', component: WebsocketsComponent},
   {path: 'observerpattern', component: ObserverpatternComponent},
-  {path: 'facadepattern', component: FacadepatternComponent}
+  {path: 'facadepattern', component: FacadepatternComponent},
+  {path: 'routerevents', component: RoutereventsComponent}
 ]
 
 @NgModule({
@@ -162,7 +164,8 @@ const routes: Routes=[
     AsyncawaitComponent,
     FormarrayangularComponent,
     ObserverpatternComponent,
-    FacadepatternComponent
+    FacadepatternComponent,
+    RoutereventsComponent
   ],
   imports: [
     CommonModule,
