@@ -2,5 +2,31 @@
     <div class="container-fluid default-bar">
       <h2>What is singleton pattern in angular? What is Practical Use of it? Please Provide Examples</h2>
       <hr>
+
+      <p>A singleton is a class that allows only a single instance of itself to be created and gives access to that created instance. It contains static variables that can accommodate unique and private instances of itself. It is used in scenarios when a user wants to restrict instantiation of a class to only one object.
+      </p>
+      <p>
+        A singleton service is a service instance that is shared across components.
+      </p>
+
+      <p>There are two ways to make a service a singleton in Angular:
+      </p>
+      <ul>
+        <li>Declare root for the value of the @Injectable() providedIn property
+        </li>
+        <li>Include the service in the AppModule or in a module that is only imported by the AppModule
+        </li>
+      </ul>
+      <h3 class="mt-4">Hands-on link:</h3>
+          <hr>
+          <div class="row"><a href="https://stackblitz.com/edit/angular-service-singleton-rd5uxt" target="_blank">stackblitz</a></div>
+          <div class="row"><a href="https://stackblitz.com/edit/singleton-services" target="_blank">stackblitz</a></div>
+      <h3 class="mt-4">Usefull links:</h3>
+      <hr>
+      <ul>
+          <li><a href="https://www.w3resource.com/angular/angular-singleton-service.php" target="_blank">w3resource</a></li>
+          <li><a href="https://medium.com/@weswhite/angular-singleton-service-and-a-loading-indicator-ca3cc7892722" target="_blank">medium</a></li>
+      </ul>
+
     </div>
 </main>

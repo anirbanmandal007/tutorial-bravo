@@ -2,5 +2,34 @@
     <div class="container-fluid default-bar">
       <h2>What is throttlejoin in rxjs? What is Practical Use of it? Please Provide Examples</h2>
       <hr>
+      <p><b>Throttle:</b></p>
+      <p>The throttle operator emits values from the source Observable, then ignores subsequently emitted values from the source for a duration determined by another Observable, then repeats the process.
+      </p>
+      <p>It takes up to 2 arguments. The first is the durationSelector , which is a function that takes a value from the source Observable then returns an Observable or Promise that computes the throttling duration for each source value.The second argument is an optional config object to define the leading and trailing behavior. Default value is defaultThrottleConfig .
+        It returns an Observable that performs the throttle operation from the source.
+      </p>
+
+      <p><b>combineAll:</b></p>
+      <p>The combineAll operator flattens Observable of Observables by applying combineLatest when they complete.
+      </p>
+      <p>It takes one optional argument, which is a project function to map each value emitted to something we want.
+      </p>
+
+      <p><b>concatAll:</b></p>
+      <p>The concatAll operator converts higher-order Observables by concatenating the inner Observables in order,
+      </p>
+      <p>
+        It takes no parameters and returns an Observable that emits the values from all inner Observables concatenated.
+      </p>
+
+      <h3 class="mt-4">Hands-on link:</h3>
+          <hr>
+          <div class="row"><a href="https://stackblitz.com/edit/rxjs-selective-throttle" target="_blank">stackblitz</a></div>
+          <div class="row"><a href="https://stackblitz.com/edit/rxjs-throttle-operator" target="_blank">stackblitz</a></div>
+      <h3 class="mt-4">Usefull links:</h3>
+      <hr>
+      <ul>
+          <li><a href="https://www.learnrxjs.io/learn-rxjs/operators/filtering/throttle" target="_blank">learnrxjs</a></li>
+      </ul>
     </div>
 </main>
