@@ -58,6 +58,19 @@ import { FacadepatternComponent } from '../topics/facadepattern/facadepattern.co
 import { RoutereventsComponent } from '../topics/routerevents/routerevents.component';
 import { ArraymanipulationsComponent } from '../topics/arraymanipulations/arraymanipulations.component';
 import { GoodpracticesComponent } from '../topics/goodpractices/goodpractices.component';
+import { DifferentbindingexpressionComponent } from '../topics/differentbindingexpression/differentbindingexpression.component';
+import { LodashComponent } from '../topics/lodash/lodash.component';
+import { DiffranceconstructorvsfactoryComponent } from '../topics/diffranceconstructorvsfactory/diffranceconstructorvsfactory.component';
+import { NgxLoggerComponent } from '../topics/ngx-logger/ngx-logger.component';
+import { ServiceworkerComponent } from '../topics/serviceworker/serviceworker.component';
+import { AngulardigestcycleComponent } from '../topics/angulardigestcycle/angulardigestcycle.component';
+import { DecoratorvsannotationsComponent } from '../topics/decoratorvsannotations/decoratorvsannotations.component';
+import { ScopehierarchyComponent } from '../topics/scopehierarchy/scopehierarchy.component';
+import { DifferencevarLetConstComponent } from '../topics/differencevar-let-const/differencevar-let-const.component';
+import { HoistingComponent } from '../topics/hoisting/hoisting.component';
+import { ClassicalvsproptypalComponent } from '../topics/classicalvsproptypal/classicalvsproptypal.component';
+import { FunctionalbindingComponent } from '../topics/functionalbinding/functionalbinding.component';
+import { DifferancebetweenprogramminglangComponent } from '../topics/differancebetweenprogramminglang/differancebetweenprogramminglang.component';
 
 const routes: Routes=[
   {path: 'pluck', component: PluckComponent},
@@ -112,7 +125,19 @@ const routes: Routes=[
   {path: 'facadepattern', component: FacadepatternComponent},
   {path: 'routerevents', component: RoutereventsComponent},
   {path: 'arraymanipulation', component: ArraymanipulationsComponent},
-  {path: 'goodpractices', component: GoodpracticesComponent}
+  {path: 'goodpractices', component: GoodpracticesComponent},
+  {path: 'angulardigestcycle', component: AngulardigestcycleComponent},
+  {path: 'classvsproto', component: ClassicalvsproptypalComponent},
+  {path: 'dcovsanotation', component: DecoratorvsannotationsComponent},
+  {path: 'diffprog', component: DifferancebetweenprogramminglangComponent},
+  {path: 'diffbinding', component: DifferentbindingexpressionComponent},
+  {path: 'diffconstvsfactory', component: DiffranceconstructorvsfactoryComponent},
+  {path: 'functionalbinding', component: FunctionalbindingComponent},
+  {path: 'hoisting', component: HoistingComponent},
+  {path: 'loadash', component: LodashComponent},
+  {path: 'ngx-logger', component: NgxLoggerComponent},
+  {path: 'scope', component: ScopehierarchyComponent},
+  {path: 'serviceworker', component: ServiceworkerComponent},
 ]
 
 @NgModule({
@@ -171,7 +196,20 @@ const routes: Routes=[
     FacadepatternComponent,
     RoutereventsComponent,
     ArraymanipulationsComponent,
-    GoodpracticesComponent
+    GoodpracticesComponent,
+    DifferentbindingexpressionComponent,
+    LodashComponent,
+    DiffranceconstructorvsfactoryComponent,
+    NgxLoggerComponent,
+    ServiceworkerComponent,
+    AngulardigestcycleComponent,
+    DecoratorvsannotationsComponent,
+    ScopehierarchyComponent,
+    DifferencevarLetConstComponent,
+    HoistingComponent,
+    ClassicalvsproptypalComponent,
+    FunctionalbindingComponent,
+    DifferancebetweenprogramminglangComponent
   ],
   imports: [
     CommonModule,
