@@ -71,6 +71,19 @@ import { HoistingComponent } from '../topics/hoisting/hoisting.component';
 import { ClassicalvsproptypalComponent } from '../topics/classicalvsproptypal/classicalvsproptypal.component';
 import { FunctionalbindingComponent } from '../topics/functionalbinding/functionalbinding.component';
 import { DifferancebetweenprogramminglangComponent } from '../topics/differancebetweenprogramminglang/differancebetweenprogramminglang.component';
+import { QuestionsComponent } from '../topics/questions/questions.component';
+import { EventbubllingcapturingComponent } from '../topics/eventbubllingcapturing/eventbubllingcapturing.component';
+import { EventmethodsComponent } from '../topics/eventmethods/eventmethods.component';
+import { PromiseallComponent } from '../topics/promiseall/promiseall.component';
+import { TypecoerictionComponent } from '../topics/typecoeriction/typecoeriction.component';
+import { ValuetypereferancetypeComponent } from '../topics/valuetypereferancetype/valuetypereferancetype.component';
+import { PrimitvedatatypeComponent } from '../topics/primitvedatatype/primitvedatatype.component';
+import { DomComponent } from '../topics/dom/dom.component';
+import { DifferentmethodsComponent } from '../topics/differentmethods/differentmethods.component';
+import { HigherorderfunctionsComponent } from '../topics/higherorderfunctions/higherorderfunctions.component';
+import { CaccherhttpComponent } from '../topics/caccherhttp/caccherhttp.component';
+import { DatastructuresComponent } from '../topics/datastructures/datastructures.component';
+import { CollectionsgeneratirsComponent } from '../topics/collectionsgeneratirs/collectionsgeneratirs.component';
 
 const routes: Routes=[
   {path: 'pluck', component: PluckComponent},
@@ -138,6 +151,19 @@ const routes: Routes=[
   {path: 'ngx-logger', component: NgxLoggerComponent},
   {path: 'scope', component: ScopehierarchyComponent},
   {path: 'serviceworker', component: ServiceworkerComponent},
+  {path: 'cachehttp', component: CaccherhttpComponent},
+  {path: 'collectiongenerators',component: CollectionsgeneratirsComponent},
+  {path: 'datastructures',component: DatastructuresComponent},
+  {path: 'differentmethods',component: DifferentmethodsComponent},
+  {path: 'dom',component: DomComponent},
+  {path: 'eventbubbling',component: EventbubllingcapturingComponent},
+  {path: 'eventmethods',component: EventmethodsComponent},
+  {path: 'higherorderfunctions',component: HigherorderfunctionsComponent},
+  {path: 'primitvedatatype',component: PrimitvedatatypeComponent},
+  {path: 'promiseall',component: PromiseallComponent},
+  {path: 'questions',component: QuestionsComponent},
+  {path: 'typecoeriction',component: TypecoerictionComponent},
+  {path: 'valuetypereftype',component: ValuetypereferancetypeComponent},
 ]
 
 @NgModule({
@@ -209,7 +235,20 @@ const routes: Routes=[
     HoistingComponent,
     ClassicalvsproptypalComponent,
     FunctionalbindingComponent,
-    DifferancebetweenprogramminglangComponent
+    DifferancebetweenprogramminglangComponent,
+    QuestionsComponent,
+    EventbubllingcapturingComponent,
+    EventmethodsComponent,
+    PromiseallComponent,
+    TypecoerictionComponent,
+    ValuetypereferancetypeComponent,
+    PrimitvedatatypeComponent,
+    DomComponent,
+    DifferentmethodsComponent,
+    HigherorderfunctionsComponent,
+    CaccherhttpComponent,
+    DatastructuresComponent,
+    CollectionsgeneratirsComponent
   ],
   imports: [
     CommonModule,
