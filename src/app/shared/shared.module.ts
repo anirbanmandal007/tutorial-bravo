@@ -84,6 +84,8 @@ import { HigherorderfunctionsComponent } from '../topics/higherorderfunctions/hi
 import { CaccherhttpComponent } from '../topics/caccherhttp/caccherhttp.component';
 import { DatastructuresComponent } from '../topics/datastructures/datastructures.component';
 import { CollectionsgeneratirsComponent } from '../topics/collectionsgeneratirs/collectionsgeneratirs.component';
+import { PureimpurepipeComponent } from '../topics/pureimpurepipe/pureimpurepipe.component';
+import { PureimpurefunctionsComponent } from '../topics/pureimpurefunctions/pureimpurefunctions.component';
 
 const routes: Routes=[
   {path: 'pluck', component: PluckComponent},
@@ -164,6 +166,8 @@ const routes: Routes=[
   {path: 'questions',component: QuestionsComponent},
   {path: 'typecoeriction',component: TypecoerictionComponent},
   {path: 'valuetypereftype',component: ValuetypereferancetypeComponent},
+  {path: 'pureimpurepipe',component: PureimpurepipeComponent},
+  {path: 'pureimpurefunctions',component: PureimpurefunctionsComponent},
 ]
 
 @NgModule({
@@ -248,7 +252,9 @@ const routes: Routes=[
     HigherorderfunctionsComponent,
     CaccherhttpComponent,
     DatastructuresComponent,
-    CollectionsgeneratirsComponent
+    CollectionsgeneratirsComponent,
+    PureimpurepipeComponent,
+    PureimpurefunctionsComponent
   ],
   imports: [
     CommonModule,
