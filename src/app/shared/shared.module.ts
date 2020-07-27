@@ -86,6 +86,10 @@ import { DatastructuresComponent } from '../topics/datastructures/datastructures
 import { CollectionsgeneratirsComponent } from '../topics/collectionsgeneratirs/collectionsgeneratirs.component';
 import { PureimpurepipeComponent } from '../topics/pureimpurepipe/pureimpurepipe.component';
 import { PureimpurefunctionsComponent } from '../topics/pureimpurefunctions/pureimpurefunctions.component';
+import { PassbyvaluevspassbyrefComponent } from '../topics/passbyvaluevspassbyref/passbyvaluevspassbyref.component';
+import { CallbackComponent } from '../topics/callback/callback.component';
+import { ScssComponent } from '../topics/scss/scss.component';
+import { ThiskeywordComponent } from '../topics/thiskeyword/thiskeyword.component';
 
 const routes: Routes=[
   {path: 'pluck', component: PluckComponent},
@@ -168,6 +172,10 @@ const routes: Routes=[
   {path: 'valuetypereftype',component: ValuetypereferancetypeComponent},
   {path: 'pureimpurepipe',component: PureimpurepipeComponent},
   {path: 'pureimpurefunctions',component: PureimpurefunctionsComponent},
+  {path: 'passbyvalvsref',component: PassbyvaluevspassbyrefComponent},
+  {path: 'callback',component: CallbackComponent},
+  {path: 'scss',component: ScssComponent},
+  {path: 'thiskeyword',component: ThiskeywordComponent},
 ]
 
 @NgModule({
@@ -254,7 +262,11 @@ const routes: Routes=[
     DatastructuresComponent,
     CollectionsgeneratirsComponent,
     PureimpurepipeComponent,
-    PureimpurefunctionsComponent
+    PureimpurefunctionsComponent,
+    PassbyvaluevspassbyrefComponent,
+    CallbackComponent,
+    ScssComponent,
+    ThiskeywordComponent
   ],
   imports: [
     CommonModule,
