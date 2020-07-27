@@ -90,6 +90,9 @@ import { PassbyvaluevspassbyrefComponent } from '../topics/passbyvaluevspassbyre
 import { CallbackComponent } from '../topics/callback/callback.component';
 import { ScssComponent } from '../topics/scss/scss.component';
 import { ThiskeywordComponent } from '../topics/thiskeyword/thiskeyword.component';
+import { JitvsaotComponent } from '../topics/jitvsaot/jitvsaot.component';
+import { RaceconditionangularComponent } from '../topics/raceconditionangular/raceconditionangular.component';
+import { CommonmodulesComponent } from '../topics/commonmodules/commonmodules.component';
 
 const routes: Routes=[
   {path: 'pluck', component: PluckComponent},
@@ -176,6 +179,9 @@ const routes: Routes=[
   {path: 'callback',component: CallbackComponent},
   {path: 'scss',component: ScssComponent},
   {path: 'thiskeyword',component: ThiskeywordComponent},
+  {path: 'jitvsaot',component: JitvsaotComponent},
+  {path: 'racecondition',component: RaceconditionangularComponent},
+  {path: 'commonmoddule',component: CommonmodulesComponent},
 ]
 
 @NgModule({
@@ -266,7 +272,10 @@ const routes: Routes=[
     PassbyvaluevspassbyrefComponent,
     CallbackComponent,
     ScssComponent,
-    ThiskeywordComponent
+    ThiskeywordComponent,
+    JitvsaotComponent,
+    RaceconditionangularComponent,
+    CommonmodulesComponent
   ],
   imports: [
     CommonModule,
