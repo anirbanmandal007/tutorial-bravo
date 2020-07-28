@@ -100,6 +100,7 @@ import { NgzoneComponent } from '../topics/ngzone/ngzone.component';
 import { RouteguardComponent } from '../topics/routeguard/routeguard.component';
 import { ViewchildcontentchildComponent } from '../topics/viewchildcontentchild/viewchildcontentchild.component';
 import { TemplatereferancevariableComponent } from '../topics/templatereferancevariable/templatereferancevariable.component';
+import { AsyncperformaceComponent } from './asyncperformace/asyncperformace.component';
 
 const routes: Routes=[
   {path: 'pluck', component: PluckComponent},
@@ -196,6 +197,7 @@ const routes: Routes=[
   {path: 'smartdumbcomponent',component: SmartdumbcomponentComponent},
   {path: 'templaterefvarible',component: TemplatereferancevariableComponent},
   {path: 'viewchildcontentchild',component: ViewchildcontentchildComponent},
+  {path: 'asyncperformance',component: AsyncperformaceComponent},
 ]
 
 @NgModule({
@@ -296,7 +298,8 @@ const routes: Routes=[
     NgzoneComponent,
     RouteguardComponent,
     ViewchildcontentchildComponent,
-    TemplatereferancevariableComponent
+    TemplatereferancevariableComponent,
+    AsyncperformaceComponent
   ],
   imports: [
     CommonModule,
