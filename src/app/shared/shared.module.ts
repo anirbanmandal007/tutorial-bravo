@@ -100,7 +100,11 @@ import { NgzoneComponent } from '../topics/ngzone/ngzone.component';
 import { RouteguardComponent } from '../topics/routeguard/routeguard.component';
 import { ViewchildcontentchildComponent } from '../topics/viewchildcontentchild/viewchildcontentchild.component';
 import { TemplatereferancevariableComponent } from '../topics/templatereferancevariable/templatereferancevariable.component';
-import { AsyncperformaceComponent } from './asyncperformace/asyncperformace.component';
+import { AsyncperformaceComponent } from '../topics/asyncperformace/asyncperformace.component';
+import { DifferencengcontentComponent } from '../topics/differencengcontent/differencengcontent.component';
+import { ReactiveformvalidationsComponent } from '../topics/reactiveformvalidations/reactiveformvalidations.component';
+import { ForchildvsforrootComponent } from '../topics/forchildvsforroot/forchildvsforroot.component';
+import { ProvidedinComponent } from '../topics/providedin/providedin.component';
 
 const routes: Routes=[
   {path: 'pluck', component: PluckComponent},
@@ -198,6 +202,10 @@ const routes: Routes=[
   {path: 'templaterefvarible',component: TemplatereferancevariableComponent},
   {path: 'viewchildcontentchild',component: ViewchildcontentchildComponent},
   {path: 'asyncperformance',component: AsyncperformaceComponent},
+  {path: 'differencengcontent',component: DifferencengcontentComponent},
+  {path: 'reactiveform',component: ReactiveformvalidationsComponent},
+  {path: 'providedin',component: ProvidedinComponent},
+  {path: 'forchildforroot',component: ForchildvsforrootComponent},
 ]
 
 @NgModule({
@@ -299,7 +307,11 @@ const routes: Routes=[
     RouteguardComponent,
     ViewchildcontentchildComponent,
     TemplatereferancevariableComponent,
-    AsyncperformaceComponent
+    AsyncperformaceComponent,
+    DifferencengcontentComponent,
+    ReactiveformvalidationsComponent,
+    ForchildvsforrootComponent,
+    ProvidedinComponent
   ],
   imports: [
     CommonModule,
