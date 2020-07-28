@@ -105,6 +105,8 @@ import { DifferencengcontentComponent } from '../topics/differencengcontent/diff
 import { ReactiveformvalidationsComponent } from '../topics/reactiveformvalidations/reactiveformvalidations.component';
 import { ForchildvsforrootComponent } from '../topics/forchildvsforroot/forchildvsforroot.component';
 import { ProvidedinComponent } from '../topics/providedin/providedin.component';
+import { RouteroutlerComponent } from '../topics/routeroutler/routeroutler.component';
+import { RouterstatevsactivatedrouteComponent } from '../topics/routerstatevsactivatedroute/routerstatevsactivatedroute.component';
 
 const routes: Routes=[
   {path: 'pluck', component: PluckComponent},
@@ -206,6 +208,8 @@ const routes: Routes=[
   {path: 'reactiveform',component: ReactiveformvalidationsComponent},
   {path: 'providedin',component: ProvidedinComponent},
   {path: 'forchildforroot',component: ForchildvsforrootComponent},
+  {path: 'routeroutlet',component: RouteroutlerComponent},
+  {path: 'routerstatevsactivatedroute',component: RouterstatevsactivatedrouteComponent},
 ]
 
 @NgModule({
@@ -311,7 +315,9 @@ const routes: Routes=[
     DifferencengcontentComponent,
     ReactiveformvalidationsComponent,
     ForchildvsforrootComponent,
-    ProvidedinComponent
+    ProvidedinComponent,
+    RouteroutlerComponent,
+    RouterstatevsactivatedrouteComponent
   ],
   imports: [
     CommonModule,
