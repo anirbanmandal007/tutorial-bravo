@@ -93,6 +93,13 @@ import { ThiskeywordComponent } from '../topics/thiskeyword/thiskeyword.componen
 import { JitvsaotComponent } from '../topics/jitvsaot/jitvsaot.component';
 import { RaceconditionangularComponent } from '../topics/raceconditionangular/raceconditionangular.component';
 import { CommonmodulesComponent } from '../topics/commonmodules/commonmodules.component';
+import { SmartdumbcomponentComponent } from '../topics/smartdumbcomponent/smartdumbcomponent.component';
+import { HostlistenerbindingComponent } from '../topics/hostlistenerbinding/hostlistenerbinding.component';
+import { Render2Component } from '../topics/render2/render2.component';
+import { NgzoneComponent } from '../topics/ngzone/ngzone.component';
+import { RouteguardComponent } from '../topics/routeguard/routeguard.component';
+import { ViewchildcontentchildComponent } from '../topics/viewchildcontentchild/viewchildcontentchild.component';
+import { TemplatereferancevariableComponent } from '../topics/templatereferancevariable/templatereferancevariable.component';
 
 const routes: Routes=[
   {path: 'pluck', component: PluckComponent},
@@ -182,6 +189,13 @@ const routes: Routes=[
   {path: 'jitvsaot',component: JitvsaotComponent},
   {path: 'racecondition',component: RaceconditionangularComponent},
   {path: 'commonmoddule',component: CommonmodulesComponent},
+  {path: 'hostlistnerbinding',component: HostlistenerbindingComponent},
+  {path: 'ngzone',component: NgzoneComponent},
+  {path: 'render2',component: Render2Component},
+  {path: 'routeguard',component: RouteguardComponent},
+  {path: 'smartdumbcomponent',component: SmartdumbcomponentComponent},
+  {path: 'templaterefvarible',component: TemplatereferancevariableComponent},
+  {path: 'viewchildcontentchild',component: ViewchildcontentchildComponent},
 ]
 
 @NgModule({
@@ -275,7 +289,14 @@ const routes: Routes=[
     ThiskeywordComponent,
     JitvsaotComponent,
     RaceconditionangularComponent,
-    CommonmodulesComponent
+    CommonmodulesComponent,
+    SmartdumbcomponentComponent,
+    HostlistenerbindingComponent,
+    Render2Component,
+    NgzoneComponent,
+    RouteguardComponent,
+    ViewchildcontentchildComponent,
+    TemplatereferancevariableComponent
   ],
   imports: [
     CommonModule,
