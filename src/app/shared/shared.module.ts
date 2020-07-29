@@ -107,6 +107,7 @@ import { ForchildvsforrootComponent } from '../topics/forchildvsforroot/forchild
 import { ProvidedinComponent } from '../topics/providedin/providedin.component';
 import { RouteroutlerComponent } from '../topics/routeroutler/routeroutler.component';
 import { RouterstatevsactivatedrouteComponent } from '../topics/routerstatevsactivatedroute/routerstatevsactivatedroute.component';
+import { IncerementaldomvsvirtualComponent } from '../topics/incerementaldomvsvirtual/incerementaldomvsvirtual.component';
 
 const routes: Routes=[
   {path: 'pluck', component: PluckComponent},
@@ -210,6 +211,7 @@ const routes: Routes=[
   {path: 'forchildforroot',component: ForchildvsforrootComponent},
   {path: 'routeroutlet',component: RouteroutlerComponent},
   {path: 'routerstatevsactivatedroute',component: RouterstatevsactivatedrouteComponent},
+  {path: 'incrementalvsvirtualdom',component: IncerementaldomvsvirtualComponent},
 ]
 
 @NgModule({
@@ -317,7 +319,8 @@ const routes: Routes=[
     ForchildvsforrootComponent,
     ProvidedinComponent,
     RouteroutlerComponent,
-    RouterstatevsactivatedrouteComponent
+    RouterstatevsactivatedrouteComponent,
+    IncerementaldomvsvirtualComponent
   ],
   imports: [
     CommonModule,
