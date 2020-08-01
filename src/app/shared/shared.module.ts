@@ -90,6 +90,24 @@ import { PassbyvaluevspassbyrefComponent } from '../topics/passbyvaluevspassbyre
 import { CallbackComponent } from '../topics/callback/callback.component';
 import { ScssComponent } from '../topics/scss/scss.component';
 import { ThiskeywordComponent } from '../topics/thiskeyword/thiskeyword.component';
+import { JitvsaotComponent } from '../topics/jitvsaot/jitvsaot.component';
+import { RaceconditionangularComponent } from '../topics/raceconditionangular/raceconditionangular.component';
+import { CommonmodulesComponent } from '../topics/commonmodules/commonmodules.component';
+import { SmartdumbcomponentComponent } from '../topics/smartdumbcomponent/smartdumbcomponent.component';
+import { HostlistenerbindingComponent } from '../topics/hostlistenerbinding/hostlistenerbinding.component';
+import { Render2Component } from '../topics/render2/render2.component';
+import { NgzoneComponent } from '../topics/ngzone/ngzone.component';
+import { RouteguardComponent } from '../topics/routeguard/routeguard.component';
+import { ViewchildcontentchildComponent } from '../topics/viewchildcontentchild/viewchildcontentchild.component';
+import { TemplatereferancevariableComponent } from '../topics/templatereferancevariable/templatereferancevariable.component';
+import { AsyncperformaceComponent } from '../topics/asyncperformace/asyncperformace.component';
+import { DifferencengcontentComponent } from '../topics/differencengcontent/differencengcontent.component';
+import { ReactiveformvalidationsComponent } from '../topics/reactiveformvalidations/reactiveformvalidations.component';
+import { ForchildvsforrootComponent } from '../topics/forchildvsforroot/forchildvsforroot.component';
+import { ProvidedinComponent } from '../topics/providedin/providedin.component';
+import { RouteroutlerComponent } from '../topics/routeroutler/routeroutler.component';
+import { RouterstatevsactivatedrouteComponent } from '../topics/routerstatevsactivatedroute/routerstatevsactivatedroute.component';
+import { IncerementaldomvsvirtualComponent } from '../topics/incerementaldomvsvirtual/incerementaldomvsvirtual.component';
 
 const routes: Routes=[
   {path: 'pluck', component: PluckComponent},
@@ -176,6 +194,24 @@ const routes: Routes=[
   {path: 'callback',component: CallbackComponent},
   {path: 'scss',component: ScssComponent},
   {path: 'thiskeyword',component: ThiskeywordComponent},
+  {path: 'jitvsaot',component: JitvsaotComponent},
+  {path: 'racecondition',component: RaceconditionangularComponent},
+  {path: 'commonmoddule',component: CommonmodulesComponent},
+  {path: 'hostlistnerbinding',component: HostlistenerbindingComponent},
+  {path: 'ngzone',component: NgzoneComponent},
+  {path: 'render2',component: Render2Component},
+  {path: 'routeguard',component: RouteguardComponent},
+  {path: 'smartdumbcomponent',component: SmartdumbcomponentComponent},
+  {path: 'templaterefvarible',component: TemplatereferancevariableComponent},
+  {path: 'viewchildcontentchild',component: ViewchildcontentchildComponent},
+  {path: 'asyncperformance',component: AsyncperformaceComponent},
+  {path: 'differencengcontent',component: DifferencengcontentComponent},
+  {path: 'reactiveform',component: ReactiveformvalidationsComponent},
+  {path: 'providedin',component: ProvidedinComponent},
+  {path: 'forchildforroot',component: ForchildvsforrootComponent},
+  {path: 'routeroutlet',component: RouteroutlerComponent},
+  {path: 'routerstatevsactivatedroute',component: RouterstatevsactivatedrouteComponent},
+  {path: 'incrementalvsvirtualdom',component: IncerementaldomvsvirtualComponent},
 ]
 
 @NgModule({
@@ -266,7 +302,25 @@ const routes: Routes=[
     PassbyvaluevspassbyrefComponent,
     CallbackComponent,
     ScssComponent,
-    ThiskeywordComponent
+    ThiskeywordComponent,
+    JitvsaotComponent,
+    RaceconditionangularComponent,
+    CommonmodulesComponent,
+    SmartdumbcomponentComponent,
+    HostlistenerbindingComponent,
+    Render2Component,
+    NgzoneComponent,
+    RouteguardComponent,
+    ViewchildcontentchildComponent,
+    TemplatereferancevariableComponent,
+    AsyncperformaceComponent,
+    DifferencengcontentComponent,
+    ReactiveformvalidationsComponent,
+    ForchildvsforrootComponent,
+    ProvidedinComponent,
+    RouteroutlerComponent,
+    RouterstatevsactivatedrouteComponent,
+    IncerementaldomvsvirtualComponent
   ],
   imports: [
     CommonModule,
