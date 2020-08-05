@@ -108,6 +108,12 @@ import { ProvidedinComponent } from '../topics/providedin/providedin.component';
 import { RouteroutlerComponent } from '../topics/routeroutler/routeroutler.component';
 import { RouterstatevsactivatedrouteComponent } from '../topics/routerstatevsactivatedroute/routerstatevsactivatedroute.component';
 import { IncerementaldomvsvirtualComponent } from '../topics/incerementaldomvsvirtual/incerementaldomvsvirtual.component';
+import { BootstrapinginangularComponent } from '../topics/bootstrapinginangular/bootstrapinginangular.component';
+import { RxjsextraComponent } from '../topics/rxjsextra/rxjsextra.component';
+import { SolidprinciplesComponent } from '../topics/solidprinciples/solidprinciples.component';
+import { TransducersComponent } from '../topics/transducers/transducers.component';
+import { DebouncetimevsthrottletimeComponent } from '../topics/debouncetimevsthrottletime/debouncetimevsthrottletime.component';
+import { CallapplyjsComponent } from '../topics/callapplyjs/callapplyjs.component';
 
 const routes: Routes=[
   {path: 'pluck', component: PluckComponent},
@@ -212,6 +218,12 @@ const routes: Routes=[
   {path: 'routeroutlet',component: RouteroutlerComponent},
   {path: 'routerstatevsactivatedroute',component: RouterstatevsactivatedrouteComponent},
   {path: 'incrementalvsvirtualdom',component: IncerementaldomvsvirtualComponent},
+  {path: 'bootstrapping',component: BootstrapinginangularComponent},
+  {path: 'callapplyjs',component: CallapplyjsComponent},
+  {path: 'debouncevsthrottle',component: DebouncetimevsthrottletimeComponent},
+  {path: 'rxjsex',component: RxjsextraComponent},
+  {path: 'solid',component: SolidprinciplesComponent},
+  {path: 'transducers',component: TransducersComponent},
 ]
 
 @NgModule({
@@ -320,7 +332,13 @@ const routes: Routes=[
     ProvidedinComponent,
     RouteroutlerComponent,
     RouterstatevsactivatedrouteComponent,
-    IncerementaldomvsvirtualComponent
+    IncerementaldomvsvirtualComponent,
+    BootstrapinginangularComponent,
+    RxjsextraComponent,
+    SolidprinciplesComponent,
+    TransducersComponent,
+    DebouncetimevsthrottletimeComponent,
+    CallapplyjsComponent
   ],
   imports: [
     CommonModule,
