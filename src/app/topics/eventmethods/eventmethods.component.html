@@ -2,5 +2,23 @@
     <div class="container-fluid default-bar">
       <h2>what are different event methods? event.stopImmediatePropagation? event.stopPropagation ? event.preventDefault ? what are their practical usage? please provide examples</h2>
       <hr>
+
+      <h4>Event.stopPropagation()</h4>
+      <p>The stopPropagation() method of the Event interface prevents further propagation of the current event in the capturing and bubbling phases. It does not, however, prevent any default behaviors from occurring; for instance, clicks on links are still processed. If you want to stop those behaviors, see the preventDefault() method.</p>
+
+      <h4>Event.stopImmediatePropagation()</h4>
+      <p>The stopImmediatePropagation() method of the Event interface prevents other listeners of the same event from being called.</p>
+      <p>If several listeners are attached to the same element for the same event type, they are called in the order in which they were added. If stopImmediatePropagation() is invoked during one such call, no remaining listeners will be called.</p>
+
+      <h4>Event.preventDefault()</h4>
+      <p>The Event interface's preventDefault() method tells the user agent that if the event does not get explicitly handled, its default action should not be taken as it normally would be. The event continues to propagate as usual, unless one of its event listeners calls stopPropagation() or stopImmediatePropagation(), either of which terminates propagation at once.</p>
+
+      <h3 class="mt-4">Usefull links:</h3>
+      <hr>
+      <ul>
+          <li><a href="https://www.oreilly.com/library/view/angular-6-by/9781788835176/5e589227-5e9f-4d92-8dc2-091950754f24.xhtml" target="_blank">oreilly</a></li>
+          <li><a href="https://blog.bitsrc.io/event-binding-mechanism-in-angular-b38f0e46d2ed" target="_blank">bitsrc</a></li>
+      </ul>
+
     </div>
 </main>
