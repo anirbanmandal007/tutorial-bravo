@@ -2,5 +2,20 @@
     <div class="container-fluid default-bar">
       <h2>what is event bubbling and what is event capturing? what are their practical usage? please provide examples</h2>
       <hr>
+
+      <h4>Event Bubbling:</h4>
+      <p>When Angular attaches event handlers to standard HTML element events, the event propagation works in the same way as standard DOM event propagation works. This is also called event bubbling. Events on child elements are propagated upwards, and hence event binding is also possible on a parent element, as follows:</p>
+      <p>This propagation process is called event bubbling. Events are first handled by the innermost element and then propagate to the outer elements until they reach the root. </p>
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ZfIc1_oj7uM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      
+      <h3 class="mt-4">Usefull links:</h3>
+      <hr>
+      <ul>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault" target="_blank">developer.mozilla</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation" target="_blank">developer.mozilla</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/stopImmediatePropagation" target="_blank">developer.mozilla</a></li>
+      </ul>
+    
     </div>
 </main>
