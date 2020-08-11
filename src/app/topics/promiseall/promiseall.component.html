@@ -2,5 +2,31 @@
     <div class="container-fluid default-bar">
       <h2>what is promiseall? what are their practical usage? please provide examples</h2>
       <hr>
+
+      <p>
+        Promises in JavaScript are one of the powerful APIs that help us to do Async operations.
+      </p>
+      <p>Promise.all takes Async operations to the next new level as it helps you to aggregate a group of promises.
+      </p>
+      <p>Promise.all is actually a promise that takes an array of promises as an input (an iterable). Then it gets resolved when all the promises get resolved or any one of them gets rejected.
+      </p>
+      <p>For example, assume that you have ten promises (Async operation to perform a network call or a database connection). You have to know when all the promises get resolved or you have to wait till all the promises resolve. So you are passing all ten promises to Promise.all. Then, Promise.all itself as a promise will get resolved once all the ten promises get resolved or any of the ten promises get rejected with an error.
+      </p>
+
+      <span>
+        
+      </span>
+  
+      <h3 class="mt-4">Hands-on link:</h3>
+          <hr>
+          <a href="https://stackblitz.com/edit/promise-all" target="_blank">stackblitz</a><br />
+          <a href="https://stackblitz.com/edit/promise-all-using-rxjs-observable" target="_blank">stackblitz</a>
+      <h3 class="mt-4">Usefull links:</h3>
+      <hr>
+      <ul>
+          <li><a href="https://www.geeksforgeeks.org/javascript-promise-all-method/" target="_blank">geeksforgeeks</a></li>
+          <li><a href="https://www.ryansouthgate.com/2016/04/19/q-all-combining-promises-in-angularjs-2/" target="_blank">ryansouthgate</a></li>
+      </ul>
+
     </div>
 </main>
