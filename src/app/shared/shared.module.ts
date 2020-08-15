@@ -114,6 +114,8 @@ import { SolidprinciplesComponent } from '../topics/solidprinciples/solidprincip
 import { TransducersComponent } from '../topics/transducers/transducers.component';
 import { DebouncetimevsthrottletimeComponent } from '../topics/debouncetimevsthrottletime/debouncetimevsthrottletime.component';
 import { CallapplyjsComponent } from '../topics/callapplyjs/callapplyjs.component';
+import { GeneratorsES6Component } from '../topics/generators-es6/generators-es6.component';
+import { PreloadmoduleComponent } from '../topics/preloadmodule/preloadmodule.component';
 
 const routes: Routes=[
   {path: 'pluck', component: PluckComponent},
@@ -224,6 +226,8 @@ const routes: Routes=[
   {path: 'rxjsex',component: RxjsextraComponent},
   {path: 'solid',component: SolidprinciplesComponent},
   {path: 'transducers',component: TransducersComponent},
+  {path: 'preload',component: PreloadmoduleComponent},
+  {path: 'generators',component: GeneratorsES6Component},
 ]
 
 @NgModule({
@@ -338,7 +342,9 @@ const routes: Routes=[
     SolidprinciplesComponent,
     TransducersComponent,
     DebouncetimevsthrottletimeComponent,
-    CallapplyjsComponent
+    CallapplyjsComponent,
+    GeneratorsES6Component,
+    PreloadmoduleComponent
   ],
   imports: [
     CommonModule,
