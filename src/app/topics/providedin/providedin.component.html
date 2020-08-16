@@ -1,8 +1,32 @@
 <main class="page-content">
-    <div class="container-fluid default-bar">
-      <h2>What is providedIn property used for in an NgModule?</h2>
-      <a href="https://itnext.io/understanding-provider-scope-in-angular-4c2589de5bc" target="_blank">I read this article here</a>
-      <a href="https://stackoverflow.com/questions/50848357/what-is-the-purpose-of-providedin-with-the-injectable-decorator-when-generating" target="_blank">I read this article here</a>
-      <hr>
-    </div>
+  <div class="container-fluid default-bar">
+    <h2>What is providedIn property used for in an NgModule?</h2>
+    <a href="https://itnext.io/understanding-provider-scope-in-angular-4c2589de5bc" target="_blank">I read this article
+      here</a>
+    <a href="https://stackoverflow.com/questions/50848357/what-is-the-purpose-of-providedin-with-the-injectable-decorator-when-generating"
+      target="_blank">I read this article here</a>
+    <hr>
+
+    <p>A provider is an instruction to the Dependency Injection system on how to obtain a value for a dependency. Most
+      of the time, these dependencies are services that you create and provide.</p>
+    <p>When you add a service provider to the root application injector, it’s available throughout the app.
+      Additionally, these providers are also available to all the classes in the app as long they have the lookup token.
+    </p>
+
+
+    <h3 class="mt-4">Hands-on link:</h3>
+    <hr>
+    <a href="https://stackblitz.com/edit/angular-providedin" target="_blank">stackblitz</a><br />
+    <a href="https://stackblitz.com/edit/angular-di-providedin" target="_blank">stackblitz</a>
+
+    <hr>
+    <h3>See also:</h3>
+    <ul>
+      <li><a href="https://angular.io/guide/providers"
+          target="_blank">angular.io</a></li>
+      <li><a href="https://indepth.dev/a-deep-dive-into-injectable-and-providedin-in-ivy/"
+          target="_blank">indepth.dev</a></li>
+    </ul>
+
+  </div>
 </main>

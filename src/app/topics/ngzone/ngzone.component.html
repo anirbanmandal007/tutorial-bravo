@@ -1,8 +1,20 @@
 <main class="page-content">
-    <div class="container-fluid default-bar">
-      <h2>What is NgZone? What would be a good use for NgZone service?</h2>
-      <a href="https://blog.thoughtram.io/angular/2017/02/21/using-zones-in-angular-for-better-performance.html" target="_blank">I read this article here</a>
-      <a href="https://medium.com/better-programming/zone-js-for-angular-devs-573d89bbb890" target="_blank">what is Zone.js?</a>
-      <hr>
-    </div>
+  <div class="container-fluid default-bar">
+    <h2>What is NgZone? What would be a good use for NgZone service?</h2>
+    <!-- <a href="https://blog.thoughtram.io/angular/2017/02/21/using-zones-in-angular-for-better-performance.html" target="_blank">I read this article here</a>
+      <a href="https://medium.com/better-programming/zone-js-for-angular-devs-573d89bbb890" target="_blank">what is Zone.js?</a> -->
+    <hr>
+    <h4>NgZone:</h4>
+    <p>An injectable service for executing work inside or outside of the Angular zone.</p>
+    <p>The most common use of this service is to optimize performance when starting a work consisting of one or more
+      asynchronous tasks that don't require UI updates or error handling to be handled by Angular. Such tasks can be
+      kicked off via runOutsideAngular and if needed, these tasks can reenter the Angular zone via run.</p>
+
+    <hr>
+    <ul>
+      <li><a href="https://angular.io/api/core/NgZone" target="_blank">angular.io</a></li>
+      <li><a href="https://medium.com/@lukaonik/what-is-ngzone-in-angular-762580ae37f6"
+          target="_blank">medium</a></li>
+    </ul>
+  </div>
 </main>

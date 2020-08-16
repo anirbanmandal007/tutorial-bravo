@@ -1,8 +1,24 @@
 <main class="page-content">
-    <div class="container-fluid default-bar">
-      <h2>What is Renderer2? What is a good use case example?</h2>
-      <a href="https://netbasal.com/angular-2-explore-the-renderer-service-e43ef673b26c" target="_blank">I read this article here</a>
-     
-      <hr>
-    </div>
+  <div class="container-fluid default-bar">
+    <h2>What is Renderer2? What is a good use case example?</h2>
+    <!-- <a href="https://netbasal.com/angular-2-explore-the-renderer-service-e43ef673b26c" target="_blank">I read this article here</a> -->
+
+    <hr>
+    <h4>Renderer2:</h4>
+    <p>Extend this base class to implement custom rendering. By default, Angular renders a template into DOM. You can use custom rendering to intercept rendering calls, or to render to something other than DOM.
+    </p>
+    <p>The Renderer2 class is an abstraction provided by Angular in the form of a service that allows to manipulate elements of your app without having to touch the DOM directly. This is the recommended approach because it then makes it easier to develop apps that can be rendered in environments that don’t have DOM access, like on the server, in a web worker or on native mobile.
+    </p>
+    <h3 class="mt-4">Hands-on link:</h3>
+    <hr>
+    <a href="https://stackblitz.com/edit/renderer2-example-2" target="_blank">stackblitz</a><br />
+    <a href="https://stackblitz.com/edit/angular-renderer2-dyanamic-creation" target="_blank">stackblitz</a>
+
+    <hr>
+    <ul>
+      <li><a href="https://angular.io/api/core/Renderer2#description" target="_blank">angular.io</a></li>
+      <li><a href="https://www.digitalocean.com/community/tutorials/angular-using-renderer2"
+          target="_blank">digitalocean</a></li>
+    </ul>
+  </div>
 </main>
