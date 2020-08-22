@@ -231,6 +231,7 @@ const routes: Routes=[
   {path: 'transducers',component: TransducersComponent},
   {path: 'preload',component: PreloadmoduleComponent},
   {path: 'generators',component: GeneratorsES6Component},
+  {path: 'commonmodule',component: CommonmodulesComponent},
 ]
 
 @NgModule({

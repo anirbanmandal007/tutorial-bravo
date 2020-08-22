@@ -3,5 +3,16 @@
       <h2>what is pure and impure pipes? what are their practical usage? please provide examples</h2>
       <a href="https://medium.com/bb-tutorials-and-thoughts/angular-understanding-pipes-and-different-ways-to-use-them-cb5e9e43dcd4" target="_blank">I read this article here</a>
       <hr>
+
+      <p>A pure pipe uses a pure function. It is only called when Angular detects a change in the value or the parameters passed as an input to a pipe.</p>
+      <p>An impure pipe is called on every change detection cycle in Angular. It is called on every digest cycle irrespective of the change in the input or value. If we need some pipe to be called on every change detection, mark the pipe as impure. In the case of impure pipes, Angular will call the transform() method on every change cycle. 
+      </p>
+
+      <h3 class="mt-4">Usefull links:</h3>
+      <ul>
+          <li><a href="https://www.aanchalgarg.com/2019/08/pure-and-impure-pipes-in-angular.html" target="_blank">aanchalgarg</a></li>
+          <li><a href="https://tutorialsforangular.com/2020/02/11/understanding-pure-vs-impure-pipes-in-angular/" target="_blank">tutorialsforangular</a></li>
+      </ul>
+
     </div>
 </main>

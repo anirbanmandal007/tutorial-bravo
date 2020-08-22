@@ -1,8 +1,34 @@
 <main class="page-content">
-    <div class="container-fluid default-bar">
-      <h2>please explain difference between @ViewChild, @ViewChildren, @ContentChild and @ContentChildren. what are their usage</h2>
-      <a href="https://stackoverflow.com/questions/34326745/whats-the-difference-between-viewchild-and-contentchild" target="_blank">I read this article here</a>
-     
-      <hr>
-    </div>
+  <div class="container-fluid default-bar">
+    <h2>please explain difference between @ViewChild, @ViewChildren, @ContentChild and @ContentChildren. what are their
+      usage</h2>
+    <!-- <a href="https://stackoverflow.com/questions/34326745/whats-the-difference-between-viewchild-and-contentchild" target="_blank">I read this article here</a> -->
+
+    <hr>
+    <h4>ViewChild:</h4>
+    <p>If you want to access following inside the Parent Component, use @ViewChild decorator of Angular.ViewChild returns the first element that matches the selector.
+    </p>
+    <h4>ViewChildren:</h4>
+    <p>You can use ViewChild if you need to query one element from the DOM and ViewChildren for multiple elements. ViewChildren is another property decorator which is used to query the DOM for multiple elements and return a QueryList</p>
+
+    <h4>ContentChild:</h4>
+    <p>@ContentChild gives the first element or directive matching the selector from the content DOM. If new child element replaces the old one matching the selector in content DOM, then property will also be updated. @ContentChild has following metadata properties.
+    </p>
+
+    <h4>ContentChildren:</h4>
+    <p>@ContentChildren is used to get QueryList of elements or directives from the content DOM. When there is change in content DOM, data in QueryList will also change. If child elements are added, we will get those new elements in QueryList. If child elements are removed, then those elements will be removed from the QueryList.</p>
+
+    <h3 class="mt-4">Hands-on link:</h3>
+    <hr>
+    <a href="https://stackblitz.com/edit/viewchild-and-content-child-in-angular" target="_blank">stackblitz</a><br />
+    <a href="https://stackblitz.com/edit/viewchild-content-child" target="_blank">stackblitz</a>
+
+    <hr>
+    <ul>
+      <li><a href="https://medium.com/technofunnel/angular-viewchild-and-viewchildren-fde2d252b9ab"
+          target="_blank">medium</a></li>
+      <li><a href="https://www.concretepage.com/angular-2/angular-2-4-contentchild-and-contentchildren-example"
+          target="_blank">concretepage</a></li>
+    </ul>
+  </div>
 </main>

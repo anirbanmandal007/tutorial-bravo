@@ -1,9 +1,68 @@
 <main class="page-content">
-    <div class="container-fluid default-bar">
-      <h2>example of iif,defer,tap,finalize,mapto,distinct,pipe? what are their practical usage? please provide examples</h2>
-      <a href="https://medium.com/javascript-everyday/7-things-you-might-not-know-about-rxjs-66e2e5d57df2" target="_blank">I read this article here</a>
-
+  <div class="container-fluid default-bar">
+    <h2>example of iif,defer,tap,finalize,mapto,distinct,pipe? what are their practical usage? please provide examples
+    </h2>
+    <a href="https://medium.com/javascript-everyday/7-things-you-might-not-know-about-rxjs-66e2e5d57df2"
+      target="_blank">I read this article here</a>
+      
       <a href="https://itnext.io/understanding-rxjs-operators-ea4bc93d56e" target="_blank">RXJS Operators</a>
-      <hr>
-    </div>
+    <hr>
+    <h4>iif: </h4>
+    <p>iif decides at subscription time which Observable will actually be subscribed.</p>
+    <p>iif accepts a condition function and two Observables. When an Observable returned by the operator is subscribed,
+      condition function will be called. Based on what boolean it returns at that moment, consumer will subscribe either
+      to the first Observable (if condition was true) or to the second (if condition was false). Condition function may
+      also not return anything - in that case condition will be evaluated as false and second Observable will be
+      subscribed.
+    </p>
+
+    <h4>defer: </h4>
+    <p>Creates an Observable that, on subscribe, calls an Observable factory to make an Observable for each new
+      Observer.</p>
+    <p>defer allows you to create the Observable only when the Observer subscribes, and create a fresh Observable for
+      each Observer. It waits until an Observer subscribes to it, and then it generates an Observable, typically with an
+      Observable factory function. It does this afresh for each subscriber, so although each subscriber may think it is
+      subscribing to the same Observable, in fact each subscriber gets its own individual Observable.
+    </p>
+
+    <h4>tap: </h4>
+    <p>Perform a side effect for every emission on the source Observable, but return an Observable that is identical to
+      the source.</p>
+    <p>Returns a mirrored Observable of the source Observable, but modified so that the provided Observer is called to
+      perform a side effect for every value, error, and completion emitted by the source. Any errors that are thrown in
+      the aforementioned Observer or handlers are safely sent down the error path of the output Observable.
+    </p>
+
+    <h4>finalize: </h4>
+    <p>Perform a side effect for every emission on the source Observable, but return an Observable that is identical to
+      the source.</p>
+    <p>Returns an Observable that mirrors the source Observable, but will call a specified function when the source
+      terminates on complete or error.
+    </p>
+
+    <h4>mapTo: </h4>
+    <p>Emits the given constant value on the output Observable every time the source Observable emits a value.</p>
+    <p>It Takes a constant value as argument, and emits that whenever the source Observable emits a value. In other
+      words, ignores the actual source value, and simply uses the emission moment to know when to emit the given value.
+    </p>
+
+    <h4>distinct: </h4>
+    <p>Returns an Observable that emits all items emitted by the source Observable that are distinct by comparison from
+      previous items.
+    </p>
+    <p>If a keySelector function is provided, then it will project each value from the source observable into a new
+      value that it will check for equality with previously projected values. If a keySelector function is not provided,
+      it will use each value from the source observable directly with an equality check against previous values.
+    </p>
+
+    <h3 class="mt-4">See these link:</h3>
+    <hr>
+    <a href="https://rxjs-dev.firebaseapp.com/api/index/function/iif" target="_blank">rxjs-dev-iif</a><br />
+    <a href="https://rxjs-dev.firebaseapp.com/api/operators/tap" target="_blank">rxjs-dev-tap</a><br />
+    <a href="https://rxjs-dev.firebaseapp.com/api/index/function/defer" target="_blank">rxjs-dev-defer</a><br />
+    <a href="https://rxjs-dev.firebaseapp.com/api/operators/finalize" target="_blank">rxjs-dev-finalize</a><br />
+    <a href="https://rxjs-dev.firebaseapp.com/api/operators/mapTo" target="_blank">rxjs-dev-mapTo</a><br />
+    <a href="https://rxjs-dev.firebaseapp.com/api/operators/distinct" target="_blank">rxjs-dev-distinct</a><br />
+
+  </div>
 </main>

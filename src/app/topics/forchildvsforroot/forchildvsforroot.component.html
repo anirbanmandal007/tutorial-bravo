@@ -1,9 +1,35 @@
 <main class="page-content">
-    <div class="container-fluid default-bar">
-      <h2>What is the difference between a module's forRoot() and forChild() methods and why do you need it?</h2>
-      <a href="https://stackoverflow.com/questions/40498081/routermodule-forrootroutes-vs-routermodule-forchildroutes" target="_blank">I read this article in stack-overflow here</a>
-      <a href="https://indepth.dev/avoiding-common-confusions-with-modules-in-angular/" target="_blank">I read this article here</a>
-     
-      <hr>
-    </div>
+  <div class="container-fluid default-bar">
+    <h2>What is the difference between a module's forRoot() and forChild() methods and why do you need it?</h2>
+    <a href="https://stackoverflow.com/questions/40498081/routermodule-forrootroutes-vs-routermodule-forchildroutes"
+      target="_blank">I read this article in stack-overflow here</a>
+    <a href="https://indepth.dev/avoiding-common-confusions-with-modules-in-angular/" target="_blank">I read this
+      article here</a>
+
+    <hr>
+    <p><b>ForRoot</b> is used when a module is “eager,” that is, it is not lazy-loaded (loads when the application starts).
+      Angular creates a factory for all the modules, except for the lazy modules, which when loaded on demand, have
+      their own factory. When we use forRoot(), we’re loading a provider that is going to be injected into the “root” of
+      the modules because it uses the same factory as our main module.
+    </p>
+    <p><b>ForChild</b> is used the other way around: specifically when we want to deliver a provider that is visible only to
+      the “children” modules of our module, in case they are lazy loaded. As each lazy module is loaded on demand, it
+      has its own injector.
+
+    </p>
+
+    <h3 class="mt-4">Hands-on link:</h3>
+    <hr>
+    <a href="https://stackblitz.com/edit/4-forroot-vs-forchild-with-forroot-and-forchild" target="_blank">stackblitz</a><br />
+    <a href="https://stackblitz.com/edit/angular-lazy-plain-showing-forroot-forchild" target="_blank">stackblitz</a>
+
+    <hr>
+    <h3>See also:</h3>
+    <ul>
+      <li><a href="https://angular.io/guide/lazy-loading-ngmodules" target="_blank">angular.io</a></li>
+      <li><a href="https://www.freelancermap.com/blog/using-forroot-and-forchild-to-configure-modules-in-angular/"
+          target="_blank">freelancermap</a></li>
+    </ul>
+
+  </div>
 </main>
