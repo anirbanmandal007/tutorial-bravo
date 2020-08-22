@@ -116,6 +116,9 @@ import { DebouncetimevsthrottletimeComponent } from '../topics/debouncetimevsthr
 import { CallapplyjsComponent } from '../topics/callapplyjs/callapplyjs.component';
 import { GeneratorsES6Component } from '../topics/generators-es6/generators-es6.component';
 import { PreloadmoduleComponent } from '../topics/preloadmodule/preloadmodule.component';
+import { SecuirtyhandlingComponent } from './secuirtyhandling/secuirtyhandling.component';
+import { ServersiderenederingComponent } from './serversiderenedering/serversiderenedering.component';
+import { AngularElementsComponent } from './angular-elements/angular-elements.component';
 
 const routes: Routes=[
   {path: 'pluck', component: PluckComponent},
@@ -344,7 +347,10 @@ const routes: Routes=[
     DebouncetimevsthrottletimeComponent,
     CallapplyjsComponent,
     GeneratorsES6Component,
-    PreloadmoduleComponent
+    PreloadmoduleComponent,
+    SecuirtyhandlingComponent,
+    ServersiderenederingComponent,
+    AngularElementsComponent
   ],
   imports: [
     CommonModule,
